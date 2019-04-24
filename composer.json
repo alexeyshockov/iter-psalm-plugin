@@ -1,0 +1,28 @@
+{
+    "name": "alexeyshockov/iter-psalm-plugin",
+    "description": "nikic/iter type information for Psalm",
+    "type": "psalm-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Shokov",
+            "email": "alexey@shockov.com"
+        }
+    ],
+    "require": {
+        "vimeo/psalm": "^3"
+    },
+    "require-dev": {
+        "nikic/iter": "^1"
+    },
+    "extra": {
+        "psalm" : {
+            "pluginClass": "AlexS\\iter\\PsalmPlugin"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "AlexS\\iter\\": ["."]
+        }
+    }
+}
